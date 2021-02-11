@@ -11,8 +11,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        
       - name: Build
-      - uses: actions/checkout@v2
         run: |
           git config --global user.email "kay.paetzold@mail.com"
           git config --global user.name "Kay Paetzold"
@@ -24,4 +26,3 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@4.0.0
         with:
           folder: $GITHUB_WORKSPACE 
-       
