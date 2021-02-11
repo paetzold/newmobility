@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/newmobility/static/css/main.8c8b27cf.chunk.css",
+    "main.js": "/newmobility/static/js/main.cfe4f56e.chunk.js",
+    "main.js.map": "/newmobility/static/js/main.cfe4f56e.chunk.js.map",
+    "runtime-main.js": "/newmobility/static/js/runtime-main.5857ee54.js",
+    "runtime-main.js.map": "/newmobility/static/js/runtime-main.5857ee54.js.map",
+    "static/js/2.47b5c239.chunk.js": "/newmobility/static/js/2.47b5c239.chunk.js",
+    "static/js/2.47b5c239.chunk.js.map": "/newmobility/static/js/2.47b5c239.chunk.js.map",
+    "static/js/3.39ec8d77.chunk.js": "/newmobility/static/js/3.39ec8d77.chunk.js",
+    "static/js/3.39ec8d77.chunk.js.map": "/newmobility/static/js/3.39ec8d77.chunk.js.map",
+    "index.html": "/newmobility/index.html",
+    "static/css/main.8c8b27cf.chunk.css.map": "/newmobility/static/css/main.8c8b27cf.chunk.css.map",
+    "static/js/2.47b5c239.chunk.js.LICENSE.txt": "/newmobility/static/js/2.47b5c239.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/newmobility/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5857ee54.js",
+    "static/js/2.47b5c239.chunk.js",
+    "static/css/main.8c8b27cf.chunk.css",
+    "static/js/main.cfe4f56e.chunk.js"
+  ]
+}
