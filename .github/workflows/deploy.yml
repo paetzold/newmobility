@@ -15,4 +15,4 @@ jobs:
       - name: Run a multi-line script
         run: |
           cd $GITHUB_WORKSPACE
-          npm run deply
+          npm run deploy
