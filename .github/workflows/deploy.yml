@@ -11,8 +11,19 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - name: Run a multi-line script
+      - name: Checkout
+        uses: actions/checkout@v2
+        
+      - name: Build
         run: |
+          git config --global user.email "kay.paetzold@mail.com"
+          git config --global user.name "Kay Paetzold"
           cd $GITHUB_WORKSPACE
-          npm run deply
+          npm install
+          npm run build
+          
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@4.0.0
+        with:
+          folder: . 
+          branch: main 
