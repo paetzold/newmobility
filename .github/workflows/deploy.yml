@@ -18,7 +18,6 @@ jobs:
         run: |
           git config --global user.email "kay.paetzold@mail.com"
           git config --global user.name "Kay Paetzold"
-          cd $GITHUB_WORKSPACE
           npm install
           npm run build
           
