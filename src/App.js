@@ -6,10 +6,6 @@ function App() {
   return (
     <Container>
       <Button color="primary">Hello World</Button>
-      <Button color="danger">Hello World 2</Button>
-      <Button color="danger">Hello World 3</Button>
-      <Button color="danger">Hello World !!!!</Button>
-      <Button color="danger">Juhu Juhu</Button>
     </Container>
   );
 }
