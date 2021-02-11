@@ -99,3 +99,4 @@ dist
 
 # DynamoDB Local files
 .dynamodb/
+build/asset-manifest.json
