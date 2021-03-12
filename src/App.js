@@ -4,7 +4,7 @@ import './App.css';
 import { makeStyles } from '@material-ui/core/styles';
 
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Switch,
   Route,
   Link
