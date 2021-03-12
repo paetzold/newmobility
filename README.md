@@ -1,5 +1,7 @@
 # newmobility
 
+The project will automatically deployed into the GH-pages at https://paetzold.github.io/newmobility/
+
 
 # Getting Started with Create React App
 

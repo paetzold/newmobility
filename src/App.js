@@ -10,10 +10,11 @@ import {
   Link
 } from "react-router-dom";
 
-import { Button, Container, Paper, Card,CardContent, Typography} from '@material-ui/core';
-import { QRCode } from 'react-qrcode-logo';
+import { Box, Container, Paper } from '@material-ui/core';
 
-import Download from './Download';
+import About from './pages/About';
+import Images from './pages/Images';
+import Download from './pages/Download';
 
 const useStyles = makeStyles({
   root: {
@@ -32,53 +33,37 @@ const useStyles = makeStyles({
   },
 });
 
-function App() {
+function Home() {
+  return (
+    <Container>
+      <Box color="text.primary" m="auto">
+        <ul>
+          <li><Link to="/about">About </Link></li>
+          <li><Link to="/images">Images</Link></li>
+          <li><Link to="/download">Download</Link></li>
+        </ul>
+      </Box>
+      </Container>);
+}
+
+
+export default function App() {
   return (
     <Router>
-      <div>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/about">About</Link>
-            </li>
-            <li>
-              <Link to="/users">Users</Link>
-            </li>
-          </ul>
-        </nav>
-
-        {/* A <Switch> looks through its children <Route>s and
-            renders the first one that matches the current URL. */}
-        <Switch>
-          <Route path="/about">
-            <About />
-          </Route>
-          <Route path="/users">
-            <Download />
-          </Route>
-          <Route path="/">
-            <Home />
-          </Route>
-        </Switch>
-      </div>
+      <Switch>
+        <Route path="/about">
+          <About />
+        </Route>
+        <Route path="/images">
+          <Images />
+        </Route>
+        <Route path="/download">
+          <Download />
+        </Route>
+        <Route path="/">
+          <Home />
+        </Route>
+      </Switch>
     </Router>
   );
 }
-
-function Home() {
-  return <h2>Home</h2>;
-}
-
-function About() {
-  return <h2>About</h2>;
-}
-
-function Users() {
-  return <h2>Users</h2>;
-}
-export default App;
-
-
